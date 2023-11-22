@@ -1,20 +1,21 @@
 html {
     background: black url(background.jpg) center center no-repeat;
     background-size: cover;
-    color: white;
+    color: rgb(255, 255, 255);
 }
+
 body {
-    display: grid;
+    display: block;
     place-items: center;
     margin: 0;
     font-family: Inter, Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5em;
 }
+@media (min-width: 500px) { body { display: grid; } }
 
 .Container {
-    width: 90%;
-    margin: 2vh auto;
+    margin: 2vh;
     background: rgba(14, 14, 26, 0.8);
     padding: 2rem;
     border-radius: 2rem;
@@ -23,13 +24,14 @@ body {
 }
     header { }
         .Avatar { 
-            display: block; 
-            float: left; 
+            display: block;  
             width: 141px; 
             height: auto;
-            margin: 0 1em 0 0;
+            margin: 0 1em 1em 0;
             border-radius: 50%;
         }
+        @media (min-width: 430px) { .Avatar { float: left; } }
+        @media (min-width: 920px) { .Avatar { width: clamp(130px, 14vw, 12rem); } }
         .TitlulPaginii {
             display: block;
             font-size: clamp(2rem, 6vw, 4rem);
@@ -37,12 +39,44 @@ body {
             margin: 0;
         }
 
-    main { }
-        .ListaLinkuri { display: block; margin: 0; padding: 0;}
-            .ListaItem { display: block; margin: 0; padding: 0; border-bottom: 1px solid #fff; margin-top: 60px;}
-                .ListaLink { display: block; padding: 0.5em; color: #fff; text-decoration: none;}
-                .ListaLink:hover { background: white; color: black;}   
-                .SocialLinks { display: flex; } 
-                    .LinkSocial { margin: 10px;}
-                    .ListaTitlu { display: block; font-size: 1em; line-height: 1.5em;}
-                .ListaText { display: block; font-size: 1em; line-height: 1.5em; }
+    main {
+        clear: both; 
+    }
+        .ListaLinkuri { 
+            display: block; 
+            margin: 0; 
+            padding: 0;
+        }
+            .ListaItem { 
+                display: block; 
+                margin: 0; 
+                padding: 0; 
+                border-bottom: 1px solid #fff; 
+                margin-top: 60px;
+            }
+                .ListaLink { 
+                    display: block; 
+                    padding: 0.5em; 
+                    color: #fff; 
+                    text-decoration: none;
+                }
+                .ListaLink:hover { 
+                    background: white; 
+                    background: rgba(3, 41, 64, 0.4); 
+                    color: rgb(255, 255, 255);
+                }   
+                .SocialLinks { 
+                    display: flex; 
+                } 
+                    .LinkSocial { 
+                        margin: 10px;}
+                    .ListaTitlu { 
+                        display: block; 
+                        font-size: 1em; 
+                        line-height: 1.5em;
+                    }
+                .ListaText { 
+                    display: block; 
+                    font-size: 1em; 
+                    line-height: 1.5em; 
+                }
