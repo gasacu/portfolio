@@ -38,6 +38,14 @@ body {
             line-height: 1em;
             margin: 0;
         }
+        .SubtitlulPaginii {
+            display: block;
+            margin: 0;
+            font-size: clamp(1rem, 1vw, 2rem);
+            font-weight: 100;
+            line-height: 1em;
+            opacity: 0.5;
+        }
 
     main {
         clear: both; 
