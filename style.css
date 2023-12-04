@@ -15,13 +15,15 @@ body {
 @media (min-width: 500px) { body { display: grid; } }
 
 .Container {
-    margin: 2vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-top: 0;
     background: rgba(14, 14, 26, 0.8);
     padding: 2rem;
-    border-radius: 2rem;
     font-size: clamp(1rem, 2vw, 2rem);
     line-height: 1.5em;
 }
+@media (min-width: 500px) { .Container { margin-right: 6vw; margin-left: 6vw; padding: 3rem;}}
     header { }
         .Avatar { 
             display: block;  
