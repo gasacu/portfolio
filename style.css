@@ -75,18 +75,21 @@ body {
                     background: rgba(3, 41, 64, 0.4); 
                     color: rgb(255, 255, 255);
                 }   
-                .SocialLinks { 
-                    display: flex; 
-                } 
-                    .LinkSocial { 
-                        margin: 10px;}
-                    .ListaTitlu { 
-                        display: block; 
-                        font-size: 1em; 
-                        line-height: 1.5em;
-                    }
                 .ListaText { 
                     display: block; 
                     font-size: 1em; 
                     line-height: 1.5em; 
                 }
+
+    footer  { }   
+        .SocialLinks { 
+            display: flex;
+        } 
+            .LinkSocial { 
+                margin: 10px;
+            }
+            .ListaTitlu { 
+                display: block; 
+                font-size: 1em; 
+                line-height: 1.5em;
+            }             
