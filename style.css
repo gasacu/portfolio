@@ -12,28 +12,80 @@ body {
     font-size: 16px;
     line-height: 1.5em;
 }
-@media (min-width: 500px) { body { display: grid; } }
+
 
 .Navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: sticky;
     top: 0;
     height: 3.75rem;
-    background: rgb(12, 22, 36);
+    background: rgb(11, 17, 32);
     box-shadow: 0 1em 1em rgba(0, 0, 0, 0.3);
 }
-    .Logo { display: block;  box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.1); }
-        .LogoImage { display: block; }
-    .TriggerButton { display: block;   padding: 0.375rem; margin: 0; background: transparent; border: none; appearance: none; }
-    .MenuTrigger { padding: 1.375rem;  }
-        .MenuTriggerImage { width: 1.5rem; height: 1.5rem; }
-    .MainMenu { display: none; height: calc(30vh); padding: 1.5rem; position: absolute; top: 3.75rem; right: 0; bottom: 0; left: 0; background: rgba(14, 14, 26, 0.9);}
-    .MenuTrigger:active + .MainMenu, .MenuTrigger:focus + .MainMenu { display: block; }
-        .MainMenuList { display: block; padding: 0; margin: 0; }
-            .MainMenuItem { display: block; }
-                .MainMenuItemLink { display: block; padding: 0.5em; color: rgb(242, 243, 244); background: transparent; font-size: 1em; font-weight: 600; text-decoration: none;}
-                .MainMenuItemLink:hover { color: rgb(255, 255, 255); background: rgba(3, 41, 64, 0.4);   }
+    .Logo { 
+            display: block; 
+            box-shadow: 0 0.5em 0.5em; 
+            color: rgba(0, 0, 0, 0.3); 
+        }
+        .LogoImage { 
+            display: block; 
+        }
+    .TriggerButton { 
+        display: block;  
+        padding: 0.375rem; 
+        margin: 0; 
+        background: transparent; 
+        border: none; 
+        appearance: none; 
+        cursor: pointer;
+    }
+    .MenuTrigger { 
+        padding: 1.375rem; 
+    }
+    @media (min-width: 768px) { .MenuTrigger { display: none; } }
+        .MenuTriggerImage { 
+            width: 1.5rem; 
+            height: 1.5rem; 
+        }
+    .MainMenu { 
+        display: none; 
+        height: 30vh; 
+        padding: 1.5rem; 
+        position: absolute; 
+        top: 3.75rem; 
+        right: 0; 
+        bottom: 0; 
+        left: 0; 
+        background: rgba(11, 17, 32, 0.9);
+    }
+    @media (min-width: 768px) { .MainMenu { display: block; height: initial; padding: 0.375rem; position: inherit; } }
+    .MainMenu.Active { 
+        display: block; 
+    }
+        .MainMenuList { 
+            display: block; 
+            padding: 0; 
+            margin: 0; 
+        }
+        @media (min-width: 768px) { .MainMenuList { display: flex; justify-content: space-between; } }
+            .MainMenuItem { 
+                display: block; 
+            }
+                .MainMenuItemLink { 
+                    display: block; 
+                    padding: 0.5em; 
+                    color: rgb(242, 243, 244);
+                    background: transparent; 
+                    font-size: 1em; 
+                    font-weight: 600; 
+                    text-decoration: none;
+                }
+                .MainMenuItemLink:hover { 
+                    color: rgb(255, 255, 255); 
+                    background: rgba(3, 41, 64, 0.4);   
+                }
 
 .Container {
     margin-left: 2vh;
@@ -66,7 +118,7 @@ body {
             margin: 0;
             font-size: clamp(1rem, 1vw, 2rem);
             font-weight: 100;
-            color: #eee;
+            color: #eeeeee6c;
             line-height: 1em;
         }
 
