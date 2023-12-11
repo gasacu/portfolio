@@ -24,6 +24,7 @@ body {
     background: rgb(11, 17, 32);
     box-shadow: 0 1em 1em rgba(0, 0, 0, 0.3);
 }
+@media (min-width: 500px) { .Navbar { margin-right: 6vw; margin-left: 6vw; } }
     .Logo { 
             display: block; 
             box-shadow: 0 0.5em 0.5em; 
