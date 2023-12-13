@@ -73,8 +73,8 @@ body {
         display: block;
         position: absolute;
         height: fit-content;
-        box-shadow: 0 0 0.7em 0.7em; 
-        color: rgba(0, 0, 0, 0.2);      
+        box-shadow: 0 0 2em 0; 
+        color: rgba(0, 0, 0, 0.9);      
     }
         .MainMenuList { 
             display: block;
@@ -88,15 +88,19 @@ body {
                 .MainMenuItemLink { 
                     display: block; 
                     padding: 0.5em; 
-                    color: rgb(242, 243, 244);
-                    background: transparent; 
+                    color: rgb(255, 255, 255);
+                    background: transparent;
                     font-size: 1em; 
                     font-weight: 600; 
                     text-decoration: none;
                 }
+                @media (min-width: 768px) { .MainMenuItemLink { text-align: center; padding: 8px 15px; } } 
                 .MainMenuItemLink:hover { 
-                    color: rgb(255, 255, 255); 
-                    background: rgba(3, 41, 64, 0.4);   
+                    color: rgb(3, 41, 64); 
+                      
+                }
+                .GithubLink {
+                    color: rgb(3, 41, 64);
                 }
 
 .Container {
@@ -133,6 +137,17 @@ body {
             color: #eeeeee6c;
             line-height: 1em;
         }
+        .DescrierePrincipala {
+            color: rgb(255, 255, 255);
+        }
+        .Resume { 
+            text-align: center;
+            color: rgb(3, 41, 64);
+        }
+        .DescriereSecundara { 
+            text-align: center;
+            color: rgba(242, 243, 244, 0.584);
+         }
 
     main {
         clear: both; 
@@ -146,7 +161,7 @@ body {
                 display: block; 
                 margin: 0; 
                 padding: 0; 
-                border-bottom: 1px solid #fff; 
+                border-bottom: 1.5px solid rgb(3, 41, 64);
                 margin-top: 60px;
             }
                 .ListaLink { 
@@ -155,11 +170,18 @@ body {
                     color: #fff; 
                     text-decoration: none;
                 }
-                    .ListaTitlu {  }
+                    .ListaTitlu {
+                        display: block; 
+                        text-align: center;
+                        font-size: 1.5em;
+                        
+                    }
                 .ListaText { 
                     display: block; 
                     font-size: 1em; 
-                    line-height: 1.5em; 
+                    line-height: 1.5em;
+                    text-align: center;
+                    color: rgba(242, 243, 244, 0.584); 
                 }
 
     footer  { }   
@@ -169,8 +191,4 @@ body {
             .LinkSocial { 
                 margin: 10px;
             }
-            .ListaTitlu { 
-                display: block; 
-                font-size: 1em; 
-                line-height: 1.5em;
-            }             
+                   
