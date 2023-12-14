@@ -113,7 +113,7 @@ body {
     line-height: 1.5em;
 }
 @media (min-width: 500px) { .Container { margin-right: 6vw; margin-left: 6vw; padding: 3rem;}}
-    header { }
+    header {  }
         .Avatar { 
             display: block;  
             width: 141px; 
@@ -122,7 +122,8 @@ body {
             border-radius: 50%;
         }
         @media (min-width: 430px) { .Avatar { float: left; } }
-        @media (min-width: 920px) { .Avatar { width: clamp(130px, 14vw, 12rem); } }
+        @media (min-width: 1024px) { .Avatar { width: clamp(141px, 14vw, 12rem);} }
+
         .TitlulPaginii {
             display: block;
             font-size: clamp(2rem, 6vw, 4rem);
@@ -143,6 +144,7 @@ body {
         .Resume { 
             text-align: center;
             color: rgb(3, 41, 64);
+            
         }
         .DescriereSecundara { 
             text-align: center;
