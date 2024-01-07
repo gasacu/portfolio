@@ -1,5 +1,5 @@
 html {
-    background: black url(background.jpg) center center no-repeat;
+    background: black url(./images/background.jpg) center center no-repeat;
     background-size: cover;
     color: rgb(255, 255, 255);
 }
@@ -102,6 +102,18 @@ body {
                 .GithubLink {
                     color: rgb(3, 41, 64);
                 }
+.Button {
+    display: block;
+    padding: 0.5em 1em;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase; 
+    text-align: center;
+    border-radius: 1em;
+    background: rgba(0, 185, 213, 0.726);
+    color: rgb(255, 255, 255);  
+}
+.Button:hover { background: rgb(3, 41, 64);; color: #fff;}
 
 .Container {
     margin-left: 2vh;
@@ -113,7 +125,7 @@ body {
     line-height: 1.5em;
 }
 @media (min-width: 500px) { .Container { margin-right: 6vw; margin-left: 6vw; padding: 3rem;}}
-    header {  }
+    header { border-bottom: 1.5px solid rgb(3, 41, 64); }
         .Avatar { 
             display: block;  
             width: 141px; 
@@ -141,15 +153,22 @@ body {
         .DescrierePrincipala {
             color: rgb(255, 255, 255);
         }
-        .Resume { 
+        .MainFeature { 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
-            color: rgb(3, 41, 64);
-            
+            padding: 1rem 0;
         }
-        .DescriereSecundara { 
-            text-align: center;
-            color: rgba(242, 243, 244, 0.584);
-         }
+        @media (min-width: 750px) { .MainFeature { padding: 1rem 2rem; flex-direction: row; justify-content: space-between;}}
+            .DescriereSecundara { 
+                text-align: center;
+                color: rgba(242, 243, 244, 0.584);
+                padding: 0;
+            }
+            .ResumeImg {
+                padding: 1rem;
+            }
 
     main {
         clear: both; 
@@ -162,7 +181,7 @@ body {
             .ListaItem { 
                 display: block; 
                 margin: 0; 
-                padding: 0; 
+                padding: 0;
                 border-bottom: 1.5px solid rgb(3, 41, 64);
                 margin-top: 60px;
             }
@@ -185,6 +204,50 @@ body {
                     text-align: center;
                     color: rgba(242, 243, 244, 0.584); 
                 }
+                .Features {
+                    display: block;
+                    padding: 1rem 0 0;
+                }
+                    .FeaturedList {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin: 0;
+                        padding: 0 0 1em;
+                        list-style-type: none;
+                    }
+                    @media (min-width: 750px) { .FeaturedList { flex-direction: row; }}
+                        .FeaturedItem {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            text-align: center;
+                            margin: 0 0 1em;
+                            padding: 0 1em;
+                        }
+                            .FeaturedItemTitle {
+                                display: block;
+                                margin: 0 0 0.5rem; font-size: 1.3rem; line-height: 2em;
+                            }
+                            .SpecificList {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                margin: 0;
+                                padding: 0;
+                                list-style-type: none;
+                            }
+                            @media (min-width: 750px) { .SpecificList {  flex-direction: column; }}
+                                .SpecificItem {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-align: center;
+                                    margin: 0 0 1em;
+                                    padding: 0 1em;
+                                }
 
     footer  { }   
         .SocialLinks { 
