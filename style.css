@@ -16,6 +16,7 @@ body {
 
 .Navbar {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: sticky;
@@ -68,7 +69,7 @@ body {
         left: 0;
         background: rgba(11, 17, 32, 0.9);
     }
-    @media (min-width: 768px) { .MainMenu { display: block; padding: 0.375rem; position: inherit; } }
+    @media (min-width: 768px) { .MainMenu { display: flex; align-items: center; justify-content: space-around; top: 0; height: 0.75rem; left: 7rem; } }
     .MainMenu.Active { 
         display: block;
         position: absolute;
@@ -76,10 +77,16 @@ body {
         box-shadow: 0 0 2em 0; 
         color: rgba(0, 0, 0, 0.9);      
     }
+    .GithubLink {
+        display: block; 
+        padding: 1rem; 
+        color: rgba(0, 185, 213, 0.726);
+    }
+    
         .MainMenuList { 
             display: block;
-            padding: 0; 
-            margin: 0; 
+            padding: 0 1rem;
+            margin: 0;   
         }
         @media (min-width: 768px) { .MainMenuList { display: flex; justify-content: center; } }
             .MainMenuItem { 
@@ -100,7 +107,7 @@ body {
                       
                 }
                 .GithubLink {
-                    color: rgb(3, 41, 64);
+                    color: rgba(0, 185, 213, 0.726);
                 }
 .Button {
     display: block;
@@ -117,7 +124,7 @@ body {
     background: rgba(0, 185, 213, 0.726);
     color: rgb(255, 255, 255);  
 }
-.Button:hover { background: rgb(3, 41, 64);; color: #fff;}
+.Button:hover { background: rgb(3, 41, 64);; color: #eee;}
 
 .Container {
     margin-left: 2vh;
