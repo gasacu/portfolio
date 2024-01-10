@@ -87,7 +87,7 @@ body {
         text-decoration: none;
         text-align: center;
         border: 1.6px solid rgba(0, 185, 213, 0.726);
-        border-radius: 1em;
+        border-radius: 0.9em;
         color: rgba(0, 185, 213, 0.726);
     }
     @media (min-width: 768px) { .GithubLink { display: flex; } }
@@ -253,12 +253,14 @@ body {
                 }
                 .Features {
                     display: block;
+                    margin: 0;
+                    padding: 0;
                 }
                     .FeaturedList {
                         width: 100%;
                         height: auto;
                         display: flex;
-                        flex-direction: column;
+                        flex-direction: row;
                         justify-content: center;
                         flex-wrap: wrap;
                         margin: 0;
@@ -300,6 +302,49 @@ body {
                                     margin: 0 0 1em;
                                     padding: 0 1em;
                                 }
+
+                .ProjectGrid { }
+                    .ProjectGridTitle { 
+                        display: block;
+                        margin: 1rem;
+                        font-size: 1.3rem;
+                        line-height: 1em;
+                     }
+                    .ProjectGridList {
+                        display: block;
+                        margin: 0;
+                        padding: 0;
+                        list-style-type: none;
+                     }
+                        .ProjectGridItem {
+                            display: block;
+                         }
+                            .ProjectGridLink {
+                                display: block;
+                                color: #525252;
+                                text-decoration: none;
+                                padding: 0 0 1.5rem 0;
+
+                             }
+                                .ProjectGridThumbnail {
+                                    display: block;
+                                    width: 100%;
+                                    height: auto;
+                                 }
+                                 @media (min-width: 380px) { .ProjectGridThumbnail { float: left; width: 33%; height: auto; margin: 0.5rem 0.5rem 0 0; } }
+                                .ProjectGridLanguages {
+                                    display: block;
+                                    margin: 0.25rem 0;
+                                 }
+                                    .ProjectLanguage { }
+                                .ProjectGridItemTitle {
+                                    display: block;
+                                    margin: 0.25rem 0;
+                                 }
+                                .ProjectGridItemDescription {
+                                    display: block;
+                                    margin: 0.25rem 0;
+                                 }
 
     footer  { }   
         .SocialLinks { 
