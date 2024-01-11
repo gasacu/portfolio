@@ -303,7 +303,9 @@ body {
                                     padding: 0 1em;
                                 }
 
-                .ProjectGrid { }
+                .ProjectGrid { 
+                    padding: 1rem 0;
+                }
                     .ProjectGridTitle { 
                         display: block;
                         margin: 1rem;
@@ -324,34 +326,44 @@ body {
                          }
                             .ProjectGridLink {
                                 display: block;
+                                max-width: 300px;
                                 color: #525252;
                                 text-decoration: none;
                                 padding: 0 0 1.5rem 0;
+                                background: rgb(11, 17, 32); margin: 1rem; box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1);
                              }
-                             @media (min-width: 650px) { .ProjectGridLink { background: white; box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1); }}
                                 .ProjectGridThumbnail {
                                     display: block;
                                     width: 100%;
+                                    max-width: 12rem;
                                     height: auto;
                                  }
-                                 @media (min-width: 380px) { .ProjectGridThumbnail { float: left; width: 33%; height: auto; margin: 0.5rem 0.5rem 0 0; } }
-                                 @media (min-width: 580px) { .ProjectGridThumbnail { width: 11rem; height: auto; } }
-                                 @media (min-width: 650px) { .ProjectGridThumbnail { width: 100%; height: auto; max-width: 300px; margin: auto; } }
+                                 @media (min-width: 650px) { .ProjectGridThumbnail { width: 100%; height: auto; max-width: 200px; margin: auto; } }
 
                                  .ProjectGridLanguages {
-                                    display: block;
+                                    display: flex;
                                     margin: 0.25rem 0;
+                                    align-items: center;
+                                    flex-wrap: wrap;
+                                    width: 100%;
+                                    height: auto;
                                  }
-                                    .ProjectLanguage { }
+                                    .ProjectLanguage { 
+                                        display: block;
+                                        margin: 0.25rem 0.75rem;
+                                        padding: 0.1rem;
+                                    }
+                                    
+                                    
                                 .ProjectGridItemTitle {
                                     display: block;
-                                    margin: 0.25rem 0;
+                                    margin: 0.25rem 0.65rem;
                                  }
                                 .ProjectGridItemDescription {
                                     display: block;
-                                    margin: 0.25rem 0;
+                                    margin: 0.5rem 0.50rem;
                                  }
-                                 @media (min-width: 380px) { .ProjectGridItemDescription { overflow: hidden; } }
+                                 
 
     footer  { }   
         .SocialLinks { 
