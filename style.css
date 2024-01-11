@@ -316,23 +316,29 @@ body {
                         padding: 0;
                         list-style-type: none;
                      }
+                     @media (min-width: 650px) { .ProjectGridList { display: grid; grid-template-columns: 1fr 1fr;}}
+
                         .ProjectGridItem {
                             display: block;
+                            clear: both;
                          }
                             .ProjectGridLink {
                                 display: block;
                                 color: #525252;
                                 text-decoration: none;
                                 padding: 0 0 1.5rem 0;
-
                              }
+                             @media (min-width: 650px) { .ProjectGridLink { background: white; box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1); }}
                                 .ProjectGridThumbnail {
                                     display: block;
                                     width: 100%;
                                     height: auto;
                                  }
                                  @media (min-width: 380px) { .ProjectGridThumbnail { float: left; width: 33%; height: auto; margin: 0.5rem 0.5rem 0 0; } }
-                                .ProjectGridLanguages {
+                                 @media (min-width: 580px) { .ProjectGridThumbnail { width: 11rem; height: auto; } }
+                                 @media (min-width: 650px) { .ProjectGridThumbnail { width: 100%; height: auto; max-width: 300px; margin: auto; } }
+
+                                 .ProjectGridLanguages {
                                     display: block;
                                     margin: 0.25rem 0;
                                  }
@@ -345,6 +351,7 @@ body {
                                     display: block;
                                     margin: 0.25rem 0;
                                  }
+                                 @media (min-width: 380px) { .ProjectGridItemDescription { overflow: hidden; } }
 
     footer  { }   
         .SocialLinks { 
