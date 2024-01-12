@@ -86,13 +86,13 @@ body {
         font-weight: normal;
         text-decoration: none;
         text-align: center;
-        border: 1.6px solid rgba(0, 185, 213, 0.726);
+        border: 1.4px solid rgba(0, 185, 213, 0.607); 
         border-radius: 0.9em;
-        color: rgba(0, 185, 213, 0.726);
+        color: rgba(0, 185, 213, 0.607); 
     }
     @media (min-width: 768px) { .GithubLink { display: flex; } }
     .GithubLink:hover {
-        background: rgba(0, 185, 213, 0.726);
+        background: rgba(0, 185, 213, 0.607);  
         color: #fff;
     }
         .MainMenuList { 
@@ -318,7 +318,7 @@ body {
                         padding: 0;
                         list-style-type: none;
                      }
-                     @media (min-width: 650px) { .ProjectGridList { display: grid; grid-template-columns: 1fr 1fr;}}
+                     @media (min-width: 650px) { .ProjectGridList { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));}}
 
                         .ProjectGridItem {
                             display: block;
