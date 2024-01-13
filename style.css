@@ -2,15 +2,16 @@ html {
     background: black url(./images/background.jpg) center center no-repeat;
     background-size: cover;
     color: rgb(255, 255, 255);
+    font-family: 'Montserrat', 'Trebuchet MS', 'sans-serif';
+    font-size: 16px;
+    line-height: 1.5em;
 }
 
 body {
     display: block;
     place-items: center;
     margin: 0;
-    font-family: Inter, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5em;
+    text-rendering: optimizeSpeed;
 }
 
 
@@ -174,8 +175,7 @@ body {
             width: 141px; 
             height: auto;
             margin: 0 1em 1em 0;
-            border-radius: 50%;
-            
+            border-radius: 50%;            
         }
         @media (min-width: 430px) { .Avatar { float: left; } }
         @media (min-width: 1024px) { .Avatar { width: clamp(141px, 14vw, 12rem);} }
@@ -227,6 +227,7 @@ body {
         }
             .ListaItem { 
                 display: block; 
+                clear: both;
                 margin: 0; 
                 padding: 0;
                 border-bottom: 1.5px solid rgb(3, 41, 64);
@@ -257,22 +258,20 @@ body {
                     padding: 0;
                 }
                     .FeaturedList {
-                        width: 100%;
-                        height: auto;
                         display: flex;
                         flex-direction: row;
                         justify-content: center;
                         flex-wrap: wrap;
                         margin: 0;
-                        gap: 30px;
-                        padding: 1em 0;
+                        padding: 0;
                         list-style-type: none;
                     }
                     @media (min-width: 750px) { .FeaturedList { flex-direction: row; }}
                         .FeaturedItem {
+                            display: block;
+                            clear: both;
                             width: 300px;
-                            max-width: 100%;
-                            height: auto;
+                            margin: 1.5rem;
                             border: 1px solid rgba(0, 185, 213, 0.607); 
                             border-radius: 20px;
                             box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
@@ -288,6 +287,7 @@ body {
                                 display: flex;
                                 flex-direction: row;
                                 justify-content: center;
+                                width: 100%;
                                 margin: 0;
                                 padding: 1em 0;
                                 list-style-type: none;
@@ -318,11 +318,12 @@ body {
                         padding: 0;
                         list-style-type: none;
                      }
-                     @media (min-width: 650px) { .ProjectGridList { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));}}
+                     @media (min-width: 650px) { .ProjectGridList { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));}}
 
                         .ProjectGridItem {
                             display: block;
                             clear: both;
+                            margin: 1.5rem;
                          }
                             .ProjectGridLink {
                                 display: block;
@@ -330,15 +331,18 @@ body {
                                 color: #525252;
                                 text-decoration: none;
                                 padding: 0 0 1.5rem 0;
-                                background: rgb(11, 17, 32); margin: 1rem; box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1);
+                                background: rgb(11, 17, 32); 
+                                margin: auto; 
+                                box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1);
                              }
                                 .ProjectGridThumbnail {
                                     display: block;
-                                    width: 100%;
-                                    max-width: 12rem;
+                                    width: 90%;
+                                    max-width: 17rem;
                                     height: auto;
+                                    margin: auto;
                                  }
-                                 @media (min-width: 650px) { .ProjectGridThumbnail { width: 100%; height: auto; max-width: 200px; margin: auto; } }
+                                 @media (min-width: 650px) { .ProjectGridThumbnail { width: 90%; height: auto; max-width: 17rem; margin: auto; } }
 
                                  .ProjectGridLanguages {
                                     display: flex;
