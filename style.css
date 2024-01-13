@@ -309,8 +309,7 @@ body {
                     .ProjectGridTitle { 
                         display: block;
                         margin: 1rem;
-                        font-size: 1.3rem;
-                        line-height: 1em;
+                        font-size: 1em;
                      }
                     .ProjectGridList {
                         display: block;
@@ -323,49 +322,60 @@ body {
                         .ProjectGridItem {
                             display: block;
                             clear: both;
-                            margin: 1.5rem;
+                            margin: 1rem;
                          }
                             .ProjectGridLink {
                                 display: block;
                                 max-width: 300px;
-                                color: #525252;
                                 text-decoration: none;
-                                padding: 0 0 1.5rem 0;
+                                padding: 1.5rem 1rem 2rem 1rem;
                                 background: rgb(11, 17, 32); 
                                 margin: auto; 
                                 box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1);
-                             }
+                                border-radius: 5px;
+                            }
                                 .ProjectGridThumbnail {
                                     display: block;
                                     width: 90%;
                                     max-width: 17rem;
                                     height: auto;
                                     margin: auto;
+                                    border-radius: 5px;
                                  }
                                  @media (min-width: 650px) { .ProjectGridThumbnail { width: 90%; height: auto; max-width: 17rem; margin: auto; } }
 
                                  .ProjectGridLanguages {
                                     display: flex;
                                     margin: 0.25rem 0;
+                                    font-size: 0.8rem;
+                                    line-height: 1.5em;
                                     align-items: center;
                                     flex-wrap: wrap;
                                     width: 100%;
                                     height: auto;
+                                    color: rgba(0, 185, 213, 0.726);
+                                    
                                  }
                                     .ProjectLanguage { 
                                         display: block;
-                                        margin: 0.25rem 0.75rem;
-                                        padding: 0.1rem;
+                                        margin: 0.25rem 0.25rem;
+                                        padding: 0.1rem 0.7rem;
+                                        border-radius: 0.9em;
+                                        background: rgba(3, 41, 64, 0.5);
                                     }
-                                    
                                     
                                 .ProjectGridItemTitle {
                                     display: block;
-                                    margin: 0.25rem 0.65rem;
+                                    margin: 0.65rem;
+                                    color: #cdcccc;
+                                    font-size: 1.2rem;
                                  }
                                 .ProjectGridItemDescription {
                                     display: block;
                                     margin: 0.5rem 0.50rem;
+                                    color: #6a6a6a;
+                                    font-size: 1rem;
+                                    line-height: 1.5rem;
                                  }
                                  
 
