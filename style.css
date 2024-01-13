@@ -334,6 +334,7 @@ body {
                                 box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1);
                                 border-radius: 5px;
                             }
+                            .ProjectGridLink:hover { transform: translateY(-10px); box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 50px 4px; }
                                 .ProjectGridThumbnail {
                                     display: block;
                                     width: 90%;
