@@ -136,7 +136,7 @@ body {
                 }
                 @media (min-width: 768px) { .MainMenuItemLink { text-align: center; padding: 8px 15px; } } 
                 .MainMenuItemLink:hover { 
-                    color:aqua;
+                    color:rgb(0, 203, 230);
                       
                 }
                 .GithubLink {
@@ -353,7 +353,7 @@ body {
                                     flex-wrap: wrap;
                                     width: 100%;
                                     height: auto;
-                                    color: rgba(0, 185, 213, 0.726);
+                                    color: rgb(0, 203, 230);
                                     
                                  }
                                     .ProjectLanguage { 
@@ -361,7 +361,7 @@ body {
                                         margin: 0.25rem 0.25rem;
                                         padding: 0.1rem 0.7rem;
                                         border-radius: 0.9em;
-                                        background: rgba(3, 41, 64, 0.5);
+                                        background: rgb(3, 41, 64);
                                     }
                                     
                                 .ProjectGridItemTitle {
@@ -423,7 +423,7 @@ body {
                     height: 29px;
                     background: #ccc;
                 } 
-                .FooterSocialLink:hover { background: aqua;} 
+                .FooterSocialLink:hover { background: rgb(0, 203, 230);} 
         .FooterRights {
             text-align: center;
             font-size: 0.8em;
