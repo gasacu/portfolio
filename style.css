@@ -23,8 +23,8 @@ body {
     position: sticky;
     top: 0;
     height: 3.75rem;
-    background: rgb(9, 14, 24);
-    box-shadow: 0 1em 1em rgba(0, 0, 0, 0.6);
+    background: rgba(9, 14, 24, 1);
+    box-shadow: 0 1em 1em rgba(0, 0, 0, 0.5);
     margin-left: 2vh;
     margin-right: 2vh;
     z-index: 1;
@@ -162,7 +162,7 @@ body {
     margin-left: 2vh;
     margin-right: 2vh;
     margin-top: 0;
-    background: rgba(14, 14, 26, 0.8);
+    background: rgba(9, 14, 24, 0.8);
     padding: 3rem;
     font-size: clamp(1rem, 2vw, 1.5rem);
     line-height: 1.5em;
@@ -178,6 +178,7 @@ body {
         }
         @media (min-width: 430px) { .Avatar { float: left; } }
         @media (min-width: 1024px) { .Avatar { width: clamp(141px, 14vw, 12rem); margin: 0 1em 1em 2em;} }
+        @media (min-width: 1500px) { .Avatar { margin: 0 1em 1em 3em; } }
 
         .TitlulPaginii {
             display: block;
@@ -326,9 +327,9 @@ body {
                                 max-width: 300px;
                                 text-decoration: none;
                                 padding: 1.5rem 1rem 2rem 1rem;
-                                background: rgb(11, 17, 32); 
+                                background: rgba(5, 18, 29, 1); 
                                 margin: auto; 
-                                box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1);
+                                box-shadow: 0 1em 1em rgba(0, 0, 0, 0.2);
                                 border-radius: 5px;
                             }
                             .ProjectGridLink:hover { transform: translateY(-10px); box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 50px 4px; z-index: 2;}
