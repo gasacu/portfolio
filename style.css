@@ -367,13 +367,13 @@ body {
                                 .ProjectGridItemTitle {
                                     display: block;
                                     margin: 0.65rem;
-                                    color: #cdcccc;
+                                    color: #d7d7d7;
                                     font-size: 1.2rem;
                                  }
                                 .ProjectGridItemDescription {
                                     display: block;
                                     margin: 0.5rem 0.50rem;
-                                    color: #6a6a6a;
+                                    color: #9E9E9E;
                                     font-size: 1rem;
                                     line-height: 1.5rem;
                                  }
