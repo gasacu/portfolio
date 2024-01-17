@@ -87,14 +87,14 @@ body {
         font-weight: normal;
         text-decoration: none;
         text-align: center;
-        border: 1.4px solid rgb(0, 203, 230);
+        border: 1.6px solid rgb(0, 169, 230);
         border-radius: 1em;
-        color: rgb(0, 203, 230);
+        color: rgb(0, 169, 230);
     }
-    @media (min-width: 768px) { .GithubLink { display: flex; color: rgb(0, 203, 230);} }
+    @media (min-width: 768px) { .GithubLink { display: flex;} }
     .GithubLink:hover {
         border: none;  
-        background: rgba(0, 185, 213, 0.726);  
+        background: rgba(0, 169, 230, 0.833); 
         color: #fff;
     }
         .MainMenuList { 
@@ -112,50 +112,49 @@ body {
             font-weight: normal;
             text-decoration: none;
             text-align: center;
-            border: 1.6px solid rgb(0, 203, 230);
+            border: 1.6px solid rgb(0, 169, 230);
             border-radius: 1em;
-            color: rgb(0, 203, 230);
+            color: rgb(0, 169, 230);
         }
         @media (min-width: 768px) { .GithubLinkMobile { display: none; } }
         .GithubLinkMobile:hover {
-            background: rgba(0, 185, 213, 0.726);
+            background: rgba(0, 169, 230, 0.833); 
             color: #fff;
             border: none;
             
         }
-            
             .MainMenuItem { 
                 display: block; 
             }
                 .MainMenuItemLink { 
                     display: block; 
                     padding: 0.5em; 
-                    color: rgb(255, 255, 255);
+                    color: rgba(212, 212, 212, 0.849);
                     background: transparent;
                     font-size: 1em; 
                     font-weight: 600; 
                     text-decoration: none;
                 }
                 @media (min-width: 768px) { .MainMenuItemLink { text-align: center; padding: 8px 15px; } } 
+                @media (min-width: 1000px) { .MainMenuItemLink { font-size: 1.3em; } }
                 .MainMenuItemLink:hover { 
-                    color:rgb(0, 203, 230);
+                    color:rgb(255, 255, 255);
                 }
 .Button {
     display: block;
     width: 90%;
     max-width: 200px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
     padding: 0.5em 1em;
     font-weight: 700;
     text-decoration: none;
     text-align: center;
     border-radius: 1em;
     box-shadow: rgb(24, 29, 39) 20px 20px 60px, rgb(25, 30, 41) -20px -20px 60px;
-    background: rgba(0, 185, 213, 0.726); 
+    background: rgba(0, 169, 230);
     color: rgb(255, 255, 255);
 }
-@media (min-width: 750px) { .Button { margin-left: 25%; } }
+
 
 
 .Container {
@@ -205,9 +204,11 @@ body {
             padding: 1rem 0;
         }
         @media (min-width: 750px) { .MainFeature { padding: 1rem 2rem; flex-direction: row; justify-content: space-between;}}
+        @media (min-width: 1400px) { .MainFeature { margin: 0 4rem; } }    
             .DescriereSecundara { 
                 color: rgba(242, 243, 244, 0.735);
                 padding: 0 2rem;
+                font-weight: 100; 
             }
             .ResumeImg {
                 display: block;
@@ -302,9 +303,10 @@ body {
                                 }
 
                 .ProjectGrid {
-                    margin: 3rem auto; 
                     padding: 0;
+                    margin: 0 0 3rem 0;
                 }
+                @media (min-width: 1000px) { .ProjectGrid { margin: 0 3rem 0 3rem; }}
                     .ProjectGridTitle { 
                         display: block;
                         margin: 1rem;
@@ -316,23 +318,27 @@ body {
                         padding: 0;
                         list-style-type: none;
                      }
-                     @media (min-width: 650px) { .ProjectGridList { display: grid; margin: 3rem auto; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));}}
-
+                     @media (min-width: 650px) { .ProjectGridList { display: grid; margin: 0 auto 2rem auto; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));}}
+                     @media (min-width: 1800px) { .ProjectGridList { display: grid; margin: 2rem 5rem; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));}}
                         .ProjectGridItem {
                             display: block;
                             clear: both;
                             margin: 1rem;
+                            font-size: clamp(1rem, 6vw, 5.5rem);
                          }
                             .ProjectGridLink {
                                 display: block;
                                 max-width: 300px;
+                                height: 350px;
                                 text-decoration: none;
-                                padding: 1.5rem 1rem 2rem 1rem;
+                                padding: 2rem 1rem;
                                 background: rgba(5, 18, 29, 1); 
                                 margin: auto; 
                                 box-shadow: 0 1em 1em rgba(0, 0, 0, 0.2);
                                 border-radius: 5px;
+                                
                             }
+                           
                             .ProjectGridLink:hover { transform: translateY(-10px); box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 50px 4px; z-index: 2;}
                                 .ProjectGridThumbnail {
                                     display: block;
@@ -353,7 +359,7 @@ body {
                                     flex-wrap: wrap;
                                     width: 100%;
                                     height: auto;
-                                    color: rgb(0, 203, 230);
+                                    color: rgb(0, 169, 230);
                                     
                                  }
                                     .ProjectLanguage { 
@@ -385,18 +391,18 @@ body {
                                     margin: 3rem auto;
                                     padding: 20px;
                                     border-radius: 8px;
-                                    box-shadow: 0 2px 4px rgba(0, 185, 213, 0.607);
+                                    box-shadow: 0 2px 4px rgba(0, 169, 230, 0.65);
                                     text-align: center;
                                 }
                                     .education-container {
-                                        border-bottom: 1px solid  rgba(128, 128, 128, 0.397);
+                                        border-bottom: 1px solid  rgba(0, 169, 230, 0.35);
                                         padding: 10px 0;
                                     }
                                     .education-container:last-child {
                                         border-bottom: none;
                                     }
                                         .education-name {
-                                            color: #e5e5e5;
+                                            color: #ffffffd7;
                                             font-size: 1.3rem;
                                             font-style: normal;
                                             font-weight: 700;
@@ -430,12 +436,13 @@ body {
         display: block;
         clear: both;
         margin-top: 2rem;
-        line-height: 0.9rem;
+        padding: 0;
     }
         .FooterTitle {
             display: block;
             text-align: center;
-            color: rgb(0, 203, 230);
+            color: rgb(0, 169, 230);
+            font-weight: 550; 
         }
         .FooterMenu {
             display: block;
@@ -449,8 +456,21 @@ body {
                 justify-content: center;
                 padding: 0 1rem;
                 white-space: nowrap;
-                font-size: 1em;   
             }
+                .FooterMenuItem {
+                    display: block;
+                }
+                .FooterMenuItemLink:hover { 
+                    color:rgb(255, 255, 255);
+                }
+                    .FooterMenuItemLink {
+                        display: block; 
+                        padding: 0 0.5em; 
+                        color: rgba(212, 212, 212, 0.849);
+                        background: transparent;
+                        font-weight: 500; 
+                        text-decoration: none;
+                    }
                                      
         .FooterSocialList { 
             display: flex;
@@ -471,10 +491,10 @@ body {
                     height: 29px;
                     background: #ccc;
                 } 
-                .FooterSocialLink:hover { background: rgb(0, 203, 230);} 
+                .FooterSocialLink:hover { background: rgb(0, 169, 230);} 
         .FooterRights {
             text-align: center;
-            font-size: 0.8em;
+            font-size: 0.8em; 
             padding: 0;
             margin: 1em 0 0 0;
         }           
