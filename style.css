@@ -246,6 +246,8 @@ body {
                     }
                 .ListaText { 
                     display: block; 
+                    max-width: 700px;
+                    margin: 0 auto;
                     font-size: 1em; 
                     line-height: 1.5em;
                     text-align: center;
@@ -309,16 +311,17 @@ body {
                 @media (min-width: 1000px) { .ProjectGrid { margin: 0 3rem 0 3rem; }}
                     .ProjectGridTitle { 
                         display: block;
-                        margin: 1rem;
+                        margin-top: 3rem;
+                        text-align: center;
                         font-size: 1em;
                      }
                     .ProjectGridList {
                         display: block;
-                        margin: 0;
+                        margin: 0 auto 3rem auto;
                         padding: 0;
                         list-style-type: none;
                      }
-                     @media (min-width: 650px) { .ProjectGridList { display: grid; margin: 0 auto 2rem auto; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));}}
+                     @media (min-width: 650px) { .ProjectGridList { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));}}
                      @media (min-width: 1800px) { .ProjectGridList { display: grid; margin: 2rem 5rem; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));}}
                         .ProjectGridItem {
                             display: block;
