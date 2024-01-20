@@ -23,7 +23,7 @@
 
     <body itemscope="" itemtype="https://schema.org/ProfilePage">
         <div class="Navbar">
-            <a href="#" class="TriggerButton Logo" title="Back to main page">
+            <a href="#home" class="TriggerButton Logo" title="Back to main page">
                 <img src="images/home-logo.png" alt="My Logo" class="LogoImage" width="50" height="50" />
             </a>
             <button class="TriggerButton MenuTrigger" id="menuTrigger">
@@ -31,11 +31,11 @@
             </button>
             <nav class="MainMenu" id="mainMenu">
                 <ul class="MainMenuList">
-                    <li class="MainMenuItem"><a href="" class="MainMenuItemLink" title="Access the About page">About me</a></li>
-                    <li class="MainMenuItem"><a href="" class="MainMenuItemLink" title="Access the Skills page">Skills</a></li>
+                    <li class="MainMenuItem"><a href="#about" class="MainMenuItemLink OnPage" title="Access the About page">About me</a></li>
+                    <li class="MainMenuItem"><a href="#skills" class="MainMenuItemLink" title="Access the Skills page">Skills</a></li>
                  <!--     <li class="MainMenuItem"><a href="" class="MainMenuItemLink" title="Access the Experience page">Experience</a></li> -->
-                    <li class="MainMenuItem"><a href="" class="MainMenuItemLink" title="Access the Projects page">Projects</a></li>
-                    <li class="MainMenuItem"><a href="" class="MainMenuItemLink" title="Access the Education page">Education</a></li>
+                    <li class="MainMenuItem"><a href="#projects" class="MainMenuItemLink" title="Access the Projects page">Projects</a></li>
+                    <li class="MainMenuItem"><a href="#education" class="MainMenuItemLink" title="Access the Education page">Education</a></li>
                 </ul>
                 <a href="https://github.com/gasacu" class="GithubLinkMobile">GitHub Profile</a>
             </nav>
@@ -43,8 +43,8 @@
                 <span class="">GitHub Profile</span>
             </a>
         </div>
-        <div class="Container" itemscope="" itemtype="https://schema.org/Person">
-            <header>
+        <div class="Container" id="home" itemscope="" itemtype="https://schema.org/Person">
+            <header id="about" class="content-section">
                 <img src="images/gabriel-sacuianu.jpeg" class="Avatar" width="300" height="300" alt="Gabriel Sacuianu's profile picture" itemprop="image">
                 <h1 class="TitlulPaginii">
                     <strong itemprop="name">Gabriel Sacuianu</strong>
@@ -63,7 +63,7 @@
             </header>
             <main>
                 <ul class="ListaLinkuri">
-                    <li class="ListaItem">
+                    <li class="ListaItem content-section" id="skills">
                         <div class="ListaLink">
                             <h2 class="ListaTitlu">Skills</h2>
                         </div>
@@ -126,7 +126,7 @@
                         </div>
                         <p class="ListaText">My experience description</p>      
                     </li> -->
-                    <li class="ListaItem">
+                    <li class="ListaItem content-section" id="projects">
                         <div class="ListaLink">
                             <h2 class="ListaTitlu">Projects</h2>
                         </div>
@@ -193,7 +193,7 @@
                             </ol>
                         </section>      
                     </li>
-                    <li class="ListaItem">
+                    <li class="ListaItem content-section" id="education">
                         <div class="ListaLink">
                             <h2 class="ListaTitlu">Education</h2>
                         </div>
@@ -217,10 +217,10 @@
                 <h3 class="FooterTitle">Gabriel Sacuianu</h3>
                 <div class="FooterMenu" >
                     <ul class="FooterMenuList">
-                        <li class="FooterMenuItem"><a href="" class="FooterMenuItemLink" title="Access the About page">About me</a></li>
-                        <li class="FooterMenuItem"><a href="" class="FooterMenuItemLink" title="Access the Skills page">Skills</a></li>
-                        <li class="FooterMenuItem"><a href="" class="FooterMenuItemLink" title="Access the Projects page">Projects</a></li>
-                        <li class="FooterMenuItem"><a href="" class="FooterMenuItemLink" title="Access the Education page">Education</a></li>
+                        <li class="FooterMenuItem"><a href="#about" class="FooterMenuItemLink" title="Access the About page">About me</a></li>
+                        <li class="FooterMenuItem"><a href="#skills" class="FooterMenuItemLink" title="Access the Skills page">Skills</a></li>
+                        <li class="FooterMenuItem"><a href="#projects" class="FooterMenuItemLink" title="Access the Projects page">Projects</a></li>
+                        <li class="FooterMenuItem"><a href="#education" class="FooterMenuItemLink" title="Access the Education page">Education</a></li>
                     </ul>
                 </div>
                 <ul class="FooterSocialList">
